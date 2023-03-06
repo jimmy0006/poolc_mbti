@@ -12,13 +12,13 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors())
 
 app.use('/admin',admin);
-app.use('*',(req,res,next)=>{
-    if(req.cookies.done){
-        res.send('Already Done!')
-    }else{
-        next()
-    }
-})
+// app.use('*',(req,res,next)=>{
+//     if(req.cookies.done){
+//         res.send('Already Done!')
+//     }else{
+//         next()
+//     }
+// })
 app.use('/result',result);
 
 
