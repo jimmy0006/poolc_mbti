@@ -22,6 +22,6 @@ app.use('/admin',admin);
 app.use('/result',result);
 
 
-app.listen(3000,()=>{
-    console.log("listening on port : 3000")
+app.listen(3002,()=>{
+    console.log("listening on port : 3002")
 })
